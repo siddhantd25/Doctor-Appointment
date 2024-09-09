@@ -71,12 +71,6 @@ This is a professional-grade MERN (MongoDB, Express, React, Node.js) stack web a
 </p>
   
 ## Installation
-
-To set up BloodLife locally, follow these steps:
-
-- Clone the repository:
-
-      git clone https://github.com/OviSarkar62/AppointDoc.git
       
 - Install the required dependencies for backend:
 
