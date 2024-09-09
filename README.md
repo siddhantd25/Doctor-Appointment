@@ -131,7 +131,3 @@ To set up BloodLife locally, follow these steps:
 - Node.js - JavaScript runtime environment for building scalable server-side applications
 - JWT - JSON Web Token for user authentication and authorization
 - Bcrypt - Password hashing library for secure password storage
-
-## Live Link
-
-The live project: [AppointDoc](https://appoint-doc.vercel.app/login)
