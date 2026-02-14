@@ -32,6 +32,10 @@ const registerController = async (req, res) => {
   try {
     const { name, email, password } = req.body;
 
+    // Check if this is the first user
+    const userCount = await userModel.countDocuments();
+    const isFirstUser = userCount === 0;
+
     // Hash and salt password
     const saltRounds = 10;
     const hashedPassword = await bcrypt.hash(password, saltRounds);
@@ -40,6 +44,7 @@ const registerController = async (req, res) => {
       name,
       email,
       password: hashedPassword,
+      isAdmin: isFirstUser, // First user becomes admin automatically
     });
     await newUser.save();
 
